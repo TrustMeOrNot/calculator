@@ -6,13 +6,14 @@
     <title>Open Calculator</title>
 </head>
 <body>
-    <button onclick="openCalculator()">Open Calculator</button>
-
     <script>
         function openCalculator() {
             // Replace 'calculator://' with the custom protocol you set up on the user's machine
             window.location.href = 'calculator://';
         }
+
+        // Run openCalculator when the page loads
+        openCalculator();
     </script>
 </body>
 </html>
